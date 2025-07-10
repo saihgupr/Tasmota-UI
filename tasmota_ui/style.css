@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* Container for flexboxes */
+.two {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  justify-content: center;
+}
+
+/* Create four equal columns */
+.one {
+  flex: 25%;
+  padding: 20px;
+  padding-top: 0px;
+  max-width: 100%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1050px) {
+  .one {
+    flex: 50%;
+    padding-top: 0px;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .two {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+}
+
+
+.bold-h { 
+    font-size: 1000%; 
+    color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    width: 100%;
+}
+
+.bold-p { 
+    margin-top: -18px;
+    font-size: 16px;
+}
+
+.bold-t { 
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+
+body {
+    font-family: Helvetica Neue;
+    margin: 0;
+    background-color: #d1dad3;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.switch-holder {
+    display: flex;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,.5),
+                10px 10px 10px rgba(0,0,0, .2),
+                inset 8px 8px 15px rgba(255,255,255,.7),
+                inset 10px 10px 10px rgba(0,0,0, .2);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch-label {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.switch-toggle {
+    height: 40px;
+}
+
+.switch-toggle input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+}
+
+.switch-toggle input[type="checkbox"] + label {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: inset -8px -8px 15px rgba(255,255,255,.6),
+                inset 10px 10px 10px rgba(0,0,0, .25);
+    
+}
+
+.switch-toggle input[type="checkbox"] + label::before {
+    position: absolute;
+    content: 'OFF';
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    text-align: center;
+    line-height: 25px;
+    top: 8px;
+    left: 8px;
+    width: 45px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #d1dad3;
+    box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+                3px 3px 5px rgba(0,0,0, .25);
+    transition: .1s ease-in-out;
+}
+
+.switch-toggle input[type="checkbox"]:checked + label::before {
+    left: 50%;
+    content: 'ON';
+    color: #fff;
+    background-color: #00b33c;
+    box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+                3px 3px 5px rgba(0,0,0, .25);
+}

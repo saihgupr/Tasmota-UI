@@ -1,6 +1,6 @@
-# Tasmota UI Dashboard
+# Tasmota UI
 
-![Tasmota UI Logo Placeholder](https://via.placeholder.com/150x50?text=Tasmota+UI)
+![Tasmota UI Logo Placeholder](https://i.imgur.com/Cu9a63d.png)
 
 A simple, lightweight, and self-hosted web interface for controlling your Tasmota-powered smart devices.
 

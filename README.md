@@ -43,6 +43,8 @@ These instructions will get you a copy of the project up and running on your loc
 4.  **Access in browser:**
     Open your web browser and navigate to the URL where you placed the files (e.g., `http://localhost/tasmota-ui/` or `http://your-server-ip/tasmota-ui/`).
 
+![Tasmota UI Logo Placeholder](https://i.imgur.com/ju98bYW.png)
+
 ## ⚙️ Configuration
 
 The `devices.json` file is crucial for this dashboard to function. It's a JSON object where top-level keys represent device types (e.g., "Lights", "Fans"), and their values are objects mapping device names to their IP addresses.
@@ -73,4 +75,4 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 This project is open-sourced under the MIT License. See the `LICENSE` file for more details. *(You may need to create a `LICENSE` file if you don't have one.)*
 
-![Tasmota UI Logo Placeholder](https://i.imgur.com/ju98bYW.png)
+

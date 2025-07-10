@@ -1,6 +1,6 @@
 # Tasmota UI
 
-![Tasmota UI Logo Placeholder](https://i.imgur.com/Cu9a63d.png)
+![Tasmota UI Logo Placeholder](https://i.imgur.com/1X18YVf.png)
 
 A simple, lightweight, and self-hosted web interface for controlling your Tasmota-powered smart devices.
 
@@ -72,3 +72,5 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 ## 📄 License
 
 This project is open-sourced under the MIT License. See the `LICENSE` file for more details. *(You may need to create a `LICENSE` file if you don't have one.)*
+
+![Tasmota UI Logo Placeholder](https://i.imgur.com/ju98bYW.png)
